@@ -1,0 +1,86 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'MyWebFont';
+}
+@font-face {
+	font-family: 'MyWebFont';
+	src: url('WebFont.eot');
+	src: url('WebFont.eot?iefix') format('eot'),
+		url('WebFont.woff') format('woff'), url('WebFont.ttf') format('truetype'),
+		url('WebFont.svg#webfont') format('svg');
+}
+body {
+	background-color: rgb(32, 30, 30);
+}
+nav {
+	z-index: 2;
+	height: 130px;
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+	background-color: rgba(0, 0, 0, 0.727);
+	font-size: larger;
+}
+a {
+	font-size: larger;
+	text-decoration: none;
+	color: white;
+}
+.svg-wrapper {
+	position: relative;
+	top: 50%;
+	transform: translateY(15%);
+	margin: 0 auto;
+	width: 320px;
+}
+.shape {
+	stroke-dasharray: 140 540;
+	stroke-dashoffset: -474;
+	stroke-width: 8px;
+	fill: transparent;
+	stroke: whitesmoke;
+	border-bottom: 5px solid black;
+	transition: stroke-width 1s, stroke-dashoffset 1s, stroke-dasharray 1s;
+}
+.text {
+	text-align: center;
+	font-size: 16px;
+	line-height: 32px;
+	letter-spacing: 8px;
+	color: whitesmoke;
+	top: -48px;
+	position: relative;
+}
+.svg-wrapper:hover .shape {
+	stroke-width: 2px;
+	stroke-dashoffset: 0;
+	stroke-dasharray: 760;
+}
+.navLinks {
+	display: flex;
+	gap: 10px;
+}
+canvas {
+	display: block;
+	position: absolute;
+	z-index: -1;
+}
+main {
+	display: flex;
+	flex-direction: column;
+	margin: 5%;
+	color: whitesmoke;
+}
+.content {
+	background-color: rgba(0, 0, 0, 0.727);
+	font-size: larger;
+	border-radius: 10px;
+	text-align: center;
+	margin: auto;
+	padding: 0%;
+}
+#typed {
+	font-family: 'MyWebFont';
+}
