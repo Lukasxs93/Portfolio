@@ -45,20 +45,20 @@ function draw() {
 	}
 }
 
-setInterval(draw, 50);
+setInterval(draw, 20);
 
 var typed3 = new Typed('#typed', {
 	strings: [
 		'Hi my name is Luca and i like: Coding wonderfoul web apps',
 		'Hi my name is Luca and i like: 🎣Fishing🎣',
-		'Hi my name is Luca and i like: 🦜🐱 pets 🐶 🐠',
+		'Hi my name is Luca and i like: 🦜🐱 pets 🐶🐠',
 		'Hi my name is Luca and i like: Perplexing my Arduino ©️',
 		'Hi my name is Luca and i like: The Matrix 🔵💊🔴',
 		'Hi my name is Luca and i like: New Challenges!',
 	],
 	cursorChar: '',
 	typeSpeed: 80,
-	startDelay: 9000,
+	startDelay: 2000,
 	backSpeed: 40,
 	smartBackspace: true, // this is a default
 	loop: false,

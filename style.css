@@ -22,6 +22,7 @@ a {
 	font-size: medium;
 	text-decoration: none;
 	color: white;
+	cursor: pointer;
 }
 .svg-wrapper {
 	position: relative;
@@ -38,6 +39,7 @@ a {
 	stroke: whitesmoke;
 	border-bottom: 5px solid black;
 	transition: stroke-width 1s, stroke-dashoffset 1s, stroke-dasharray 1s;
+	cursor: pointer;
 }
 .text {
 	text-align: center;
@@ -47,27 +49,32 @@ a {
 	color: whitesmoke;
 	top: -48px;
 	position: relative;
+	cursor: pointer;
 }
+
 .svg-wrapper:hover .shape {
 	stroke-width: 2px;
 	stroke-dashoffset: 0;
 	stroke-dasharray: 760;
+	stroke: #6cc0bb;
+	cursor: pointer;
 }
 .navLinks {
 	display: flex;
 	gap: 10px;
 }
 canvas {
-	display: block;
-	position: absolute;
+	position: fixed;
 	z-index: -1;
 }
 main {
-	display: flex;
-	flex-direction: column;
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr;
+
 	margin: 5%;
 	color: whitesmoke;
 }
+
 .content {
 	background-color: rgba(0, 0, 0, 0.727);
 	font-size: larger;
@@ -75,7 +82,31 @@ main {
 	text-align: center;
 	margin: auto;
 	padding: 0%;
+	grid-column: 1/5;
 }
 #typed {
 	font-size: x-large;
+}
+footer {
+	background-color: rgba(0, 0, 0, 0.727);
+	height: 100px;
+	width: 100%;
+	bottom: 0;
+	display: flex;
+	justify-content: center;
+	gap: 30px;
+	align-items: center;
+}
+.svgIcon {
+	fill: white;
+}
+.svgIcon:hover {
+	fill: #6cc0bb;
+}
+.descriptionText {
+	padding: 2%;
+	line-height: 25px;
+}
+.description {
+	grid-column: 3/5;
 }
