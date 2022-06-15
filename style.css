@@ -2,8 +2,9 @@
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
-	font-family: 'MyWebFont', 'Ubuntu';
+	font-family: 'Amiga Forever', sans-serif;
 }
+
 @font-face {
 	font-family: 'MyWebFont';
 	src: url('/webfont.woff');
