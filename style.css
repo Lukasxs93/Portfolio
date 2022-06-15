@@ -6,10 +6,9 @@
 }
 @font-face {
 	font-family: 'MyWebFont';
-	src: url('WebFont.eot');
-	src: url('WebFont.eot?iefix') format('eot'),
-		url('WebFont.woff') format('woff'), url('WebFont.ttf') format('truetype'),
-		url('WebFont.svg#webfont') format('svg');
+	src: url('/webfont.woff');
+	src: url('/webfont.woff') format('eot'), url('/webfont.woff') format('woff'),
+		url('/webfont.woff') format('truetype'), url('/webfont.woff') format('svg');
 }
 body {
 	background-color: rgb(32, 30, 30);
