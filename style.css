@@ -11,15 +11,15 @@ body {
 }
 nav {
 	z-index: 2;
-	height: 130px;
+	height: 100px;
 	display: flex;
 	align-items: center;
 	justify-content: space-around;
 	background-color: rgba(0, 0, 0, 0.727);
-	font-size: medium;
+	font-size: 16px;
 }
 a {
-	font-size: medium;
+	font-size: 13px;
 	text-decoration: none;
 	color: white;
 	cursor: pointer;
@@ -29,11 +29,11 @@ a {
 	top: 50%;
 	transform: translateY(15%);
 	margin: 0 auto;
-	width: 320px;
+	width: 240px;
 }
 .shape {
 	stroke-dasharray: 140 540;
-	stroke-dashoffset: -474;
+	stroke-dashoffset: -398;
 	stroke-width: 8px;
 	fill: transparent;
 	stroke: whitesmoke;
@@ -43,9 +43,7 @@ a {
 }
 .text {
 	text-align: center;
-	font-size: 16px;
 	line-height: 32px;
-	letter-spacing: 8px;
 	color: whitesmoke;
 	top: -48px;
 	position: relative;
@@ -61,7 +59,7 @@ a {
 }
 .navLinks {
 	display: flex;
-	gap: 10px;
+	gap: 40px;
 }
 canvas {
 	position: fixed;
@@ -76,7 +74,7 @@ main {
 }
 
 .content {
-	background-color: rgba(0, 0, 0, 0.727);
+	background-color: rgba(0, 0, 0, 0.419);
 	font-size: larger;
 	border-radius: 10px;
 	text-align: center;
@@ -104,9 +102,28 @@ footer {
 }
 .descriptionText {
 	padding: 2%;
-	line-height: 40px;
+	line-height: 30px;
 }
 .description {
 	margin-top: 10vh;
 	grid-column: 3/5;
+}
+
+@media (max-width: 391px) {
+	* {
+		font-size: 12px;
+	}
+	.navLinks {
+		display: none;
+	}
+	main {
+		display: flex;
+		flex-direction: column;
+		justify-content: space-around;
+		gap: 40px;
+		align-items: center;
+	}
+	footer {
+		height: 70px;
+	}
 }
