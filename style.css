@@ -3,13 +3,12 @@
 	padding: 0;
 	box-sizing: border-box;
 	font-family: 'Press Start 2P';
+	font-size: medium;
 }
 
 @font-face {
 	font-family: 'MyWebFont';
-	src: url('/webfont.woff');
-	src: url('/webfont.woff') format('eot'), url('/webfont.woff') format('woff'),
-		url('/webfont.woff') format('truetype'), url('/webfont.woff') format('svg');
+	src: url(/webfont.woff);
 }
 body {
 	background-color: rgb(32, 30, 30);
@@ -21,10 +20,10 @@ nav {
 	align-items: center;
 	justify-content: space-around;
 	background-color: rgba(0, 0, 0, 0.727);
-	font-size: larger;
+	font-size: medium;
 }
 a {
-	font-size: larger;
+	font-size: medium;
 	text-decoration: none;
 	color: white;
 }
