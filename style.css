@@ -108,5 +108,6 @@ footer {
 	line-height: 25px;
 }
 .description {
+	margin-top: 10vh;
 	grid-column: 3/5;
 }
