@@ -1,0 +1,127 @@
+.App {  
+      display:flex;
+      flex-direction: column;
+      flex-grow: 1;
+}
+
+#c{
+  position:fixed;
+  z-index: -1;
+
+}
+
+header {
+  display:flex;
+  justify-content: space-between;
+  height: 90px;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.589);
+  padding: 0 5%;
+}
+
+.navigationLinksContainer{
+  display:flex;
+  justify-content: space-around;
+  list-style: none;
+}
+.navigationLinksContainer>li{
+  margin-right: 50px;
+}
+
+.navigationLinksContainer>li>button{
+  padding:10px 20px;
+  background-color: rgba(0, 0, 0, 0.0);
+  color:#92e5a1;
+  border: none;
+  border-radius: 5px;
+  font-size: 20px;
+  font-weight: 900;
+}
+.navigationLinksContainer>li>button:hover{
+  background-color:rgba(0, 0, 0, 0.8) ;
+  border:1px solid #92e5a1;
+  padding:9px 19px;
+  cursor: pointer;
+}
+.navigationLinksContainer>li>button:active{
+  background-color: #92e5a1;
+  color:white;
+}
+
+.App-link {
+  color: #92e5a1;
+}
+
+footer{
+    position:fixed;
+    bottom: 0px; 
+    display: flex;
+    justify-content: center;
+    height: 90px;
+    width: 100%;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.589);
+   
+}
+.quickLinks{  
+  display: flex;
+  justify-content: space-around;
+  gap: 50px;
+}
+div.quickLinks>*{
+  
+  font-size: 38px; 
+  color:#92e5a1;
+  cursor: pointer;
+}
+.hero{
+  width: max-content;
+  margin:80px auto;
+  color: #92e5a1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 40px;
+  border-radius: 10px;
+  background-color: rgba(0, 0, 0, 0.4);
+  font-size: 40px;
+  font-weight: 900;
+  backdrop-filter: blur(10px) saturate(180%);
+}
+
+.projectContainer{
+  padding: 80px;
+  margin:40px auto;  
+  display:flex; 
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 40vh;
+ 
+}
+.projectImage{
+  max-height: 350px;
+  max-width: 400px;
+}
+
+.descriptionContainer{
+  display: flex;
+  align-items: center;
+  gap:30px;
+}
+
+.project{
+    margin-top:40px;
+    margin-bottom: 100px;
+    width:70%;    
+    display: flex;    
+    flex-direction: column;     
+    justify-content: center;
+    align-items: center;
+    color: #92e5a1;
+    padding: 50px 100px;
+    border-radius: 10px;
+    background-color: rgba(0, 0, 0, 0.4);
+    font-size: 25px;
+    font-weight: 600;
+    backdrop-filter: blur(10px) saturate(180%);
+}
