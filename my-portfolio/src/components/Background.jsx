@@ -1,5 +1,8 @@
-// geting canvas by Boujjou Achraf
-var c = document.getElementById('c');
+import {useEffect } from "react";
+
+function Background() {      
+    useEffect(()=>{
+        var c = document.getElementById('c');
 var ctx = c.getContext('2d');
 
 //making the canvas full screen
@@ -12,7 +15,7 @@ var matrix =
 //converting the string into an array of single characters
 matrix = matrix.split('');
 
-var font_size = 7;
+var font_size = 16;
 var columns = c.width / font_size; //number of columns for the rain
 //an array of drops - one per column
 var drops = [];
@@ -27,8 +30,8 @@ function draw() {
 	ctx.fillStyle = 'rgba(0, 0, 0, 0.04)';
 	ctx.fillRect(0, 0, c.width, c.height);
 
-	ctx.fillStyle = '#6cc0bb'; //green text
-	ctx.font = font_size + 'px arial';
+	ctx.fillStyle = '#92e5a1'; //green text
+	ctx.font = font_size + 'px helvetica';
 	//looping over drops
 	for (var i = 0; i < drops.length; i++) {
 		//a random chinese character to print
@@ -45,21 +48,11 @@ function draw() {
 	}
 }
 
-setInterval(draw, 20);
+setInterval(draw, 50);
+    },[])
+    return ( 
+        <canvas id='c'></canvas>
+     );
+}
 
-var typed3 = new Typed('#typed', {
-	strings: [
-		'Hi my name is Luca and i like: Coding wonderfoul web apps',
-		'Hi my name is Luca and i like: 🎣Fishing🎣',
-		'Hi my name is Luca and i like: 🦜🐱 pets 🐶🐠',
-		'Hi my name is Luca and i like: Perplexing my Arduino ©️',
-		'Hi my name is Luca and i like: The Matrix 🔵💊🔴',
-		'Hi my name is Luca and i like: New Challenges!',
-	],
-	cursorChar: '',
-	typeSpeed: 80,
-	startDelay: 2000,
-	backSpeed: 40,
-	smartBackspace: true, // this is a default
-	loop: false,
-});
+export default Background;
