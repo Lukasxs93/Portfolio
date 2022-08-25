@@ -75,6 +75,7 @@ div.quickLinks>*{
   cursor: pointer;
 }
 .hero{
+  align-self: flex-start;
   width: max-content;
   margin:80px auto;
   color: #92e5a1;
