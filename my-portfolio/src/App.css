@@ -4,6 +4,10 @@
       flex-grow: 1;
 }
 
+a{
+  cursor: pointer;
+}
+
 #c{
   position:fixed;
   z-index: -1;
@@ -17,6 +21,14 @@ header {
   align-items: center;
   background-color: rgba(0, 0, 0, 0.589);
   padding: 0 5%;
+}
+.brandLogo{      
+  fill: #92e5a1;
+  height:62px;
+  width:62px;   
+}
+.brandLogo:hover{
+  fill:yellow;
 }
 
 .navigationLinksContainer{
@@ -39,7 +51,7 @@ header {
 }
 .navigationLinksContainer>li>button:hover{
   background-color:rgba(0, 0, 0, 0.8) ;
-  border:1px solid #92e5a1;
+  border:1px solid yellow;
   padding:9px 19px;
   cursor: pointer;
 }
@@ -66,13 +78,16 @@ footer{
 .quickLinks{  
   display: flex;
   justify-content: space-around;
-  gap: 50px;
+  gap: 70px;
 }
 div.quickLinks>*{
   
-  font-size: 38px; 
+  font-size: 40px; 
   color:#92e5a1;
   cursor: pointer;
+}
+.quickLinks>*:hover{
+  color:yellow;
 }
 .hero{
   align-self: flex-start;

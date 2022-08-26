@@ -1,7 +1,8 @@
+import {ReactComponent as BrandLogo} from '../assets/programming.svg'
 function Logo() {
     return ( 
         <div>
-            <img src="" alt="Logo" />
+            <a><BrandLogo className='brandLogo'/></a>
         </div>
      );
 }
