@@ -6,8 +6,8 @@ function Background() {
 var ctx = c.getContext('2d');
 
 //making the canvas full screen
-c.height = 2160;
-c.width = 3840;
+c.height = 1080;
+c.width = 1920;
 
 //chinese characters - taken from the unicode charset
 var matrix =
@@ -15,7 +15,7 @@ var matrix =
 //converting the string into an array of single characters
 matrix = matrix.split('');
 
-var font_size = 16;
+var font_size = 30;
 var columns = c.width / font_size; //number of columns for the rain
 //an array of drops - one per column
 var drops = [];
