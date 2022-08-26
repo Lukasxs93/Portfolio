@@ -1,7 +1,5 @@
-.App {  
-      display:flex;
-      flex-direction: column;
-      flex-grow: 1;
+html{
+  font-size: 16;
 }
 
 a{
@@ -17,15 +15,15 @@ a{
 header {
   display:flex;
   justify-content: space-between;
-  height: 90px;
+  height: 4.5rem;
   align-items: center;
   background-color: rgba(0, 0, 0, 0.589);
   padding: 0 5%;
 }
 .brandLogo{      
   fill: #92e5a1;
-  height:62px;
-  width:62px;   
+  height:3rem;
+  width:3rem;   
 }
 .brandLogo:hover{
   fill:yellow;
@@ -46,7 +44,7 @@ header {
   color:#92e5a1;
   border: none;
   border-radius: 5px;
-  font-size: 20px;
+  font-size: 1rem;
   font-weight: 900;
 }
 .navigationLinksContainer>li>button:hover{
@@ -69,7 +67,7 @@ footer{
     bottom: 0px; 
     display: flex;
     justify-content: center;
-    height: 90px;
+    height: 4.5rem;
     width: 100%;
     align-items: center;
     background-color: rgba(0, 0, 0, 0.589);
@@ -82,7 +80,7 @@ footer{
 }
 div.quickLinks>*{
   
-  font-size: 40px; 
+  font-size: 2rem; 
   color:#92e5a1;
   cursor: pointer;
 }
@@ -100,7 +98,7 @@ div.quickLinks>*{
   padding: 20px 40px;
   border-radius: 10px;
   background-color: rgba(0, 0, 0, 0.4);
-  font-size: 40px;
+  font-size: 1.5rem;
   font-weight: 900;
   backdrop-filter: blur(10px) saturate(180%);
 }
@@ -137,7 +135,15 @@ div.quickLinks>*{
     padding: 50px 100px;
     border-radius: 10px;
     background-color: rgba(0, 0, 0, 0.4);
-    font-size: 25px;
+    font-size: 1.3rem;
     font-weight: 600;
     backdrop-filter: blur(10px) saturate(180%);
+}
+.projectDescription{
+  font-family: 'helvetica';
+  
+}
+
+@media screen and (max-width: 700px){
+  
 }

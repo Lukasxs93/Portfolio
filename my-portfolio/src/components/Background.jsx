@@ -15,7 +15,7 @@ var matrix =
 //converting the string into an array of single characters
 matrix = matrix.split('');
 
-var font_size = 30;
+var font_size = 16;
 var columns = c.width / font_size; //number of columns for the rain
 //an array of drops - one per column
 var drops = [];
