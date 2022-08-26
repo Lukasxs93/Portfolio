@@ -9,7 +9,7 @@ function Project() {
         return(
           project.Index  % 2 === 0  ? 
              <div className="project" style={{alignSelf:'flex-end'}}>
-              <h2>{project.Name}</h2>
+              <h2 style={{alignSelf:'flex-end'}}>{project.Name}</h2>
               <div className="descriptionContainer" style={{flexDirection:'row-reverse'}} >
                 <span>{project.Description}</span>
                 <a href={project.url} target='blank'><img src={project.img} alt="preview" className="projectImage"/></a>
@@ -19,7 +19,7 @@ function Project() {
               : 
             
             <div className="project" style={{alignSelf:'flex-start'}}>
-              <h2>{project.Name}</h2>
+              <h2 style={{alignSelf:'flex-start'}}>{project.Name}</h2>
               <div className="descriptionContainer"  >
                 <span >{project.Description}</span>
                 <a href={project.url} target='blank'><img src={project.img} alt="preview" className="projectImage"/></a>
