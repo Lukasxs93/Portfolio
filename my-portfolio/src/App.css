@@ -143,8 +143,9 @@ div.quickLinks > * {
 	background-color: rgba(0, 0, 0, 0.4);
 	font-size: 1.3rem;
 	margin: 50px 100px;
+	border-radius: 20px;
 	backdrop-filter: blur(10px) saturate(180%);
-	padding: 5%;
+	padding: 2%;
 }
 @media screen and (max-width: 700px) {
 }
