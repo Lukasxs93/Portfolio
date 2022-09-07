@@ -36,7 +36,7 @@ const ProjectContextProvider = ({ children }) => {
 			img: weatherApp,
 		},
 		{
-			name: 'Watch List',
+			Name: 'Watch List',
 			Description:
 				'In order to give an answer to the modern question "What platform streams my favourite tv series" or \
 			              "I wander if this Movie is on Netflix ?!" , I, Luca Porcelli, bring you the solution ! \
