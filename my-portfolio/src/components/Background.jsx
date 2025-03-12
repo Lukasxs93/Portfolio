@@ -6,8 +6,8 @@ function Background() {
 var ctx = c.getContext('2d');
 
 //making the canvas full screen
-c.height = 1080;
-c.width = 1920;
+c.height = window.innerHeight;
+c.width = window.innerWidth;
 
 //chinese characters - taken from the unicode charset
 var matrix =
